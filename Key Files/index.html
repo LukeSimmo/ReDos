@@ -1,0 +1,24 @@
+<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    Joel Chambers - 19166881 - CCSEP - Semester 2 - 2022
+    Team 20 - ReDoS attack
+    index.html: Webpage with user input form
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>
+<!doctype html>
+<html>
+	<head>
+		<title>Index</title>
+	</head>
+	<body>
+		<h1>Create Account</h1>
+		<! Form that takes user input and submits it to the node.js server as a POST request!>
+		<form action="http://localhost:3000/func" method="POST" accept-charset="utf-8">
+			<label for="Text">Username</label><br>
+			<input type="text" id="text" name="text" value=""><br>
+			<label for="RegEx">Password</label><br>
+			<input type="text" id="pattern" name="pattern"><br>
+			Password must not be part of username<br>
+			<br>
+	  		<input type="submit" value="Submit">
+		</form><br>		
+	</body>
+</html>
